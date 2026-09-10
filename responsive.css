@@ -98,12 +98,10 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .links>a:not(.btn):after{display:none}
   .links a.active:not(.btn){background:rgba(0,92,39,.07);color:var(--green-deep)}
   .links .btn{margin-top:6px}
-
   .luxury-hero{min-height:680px}
   .hero-lux-content{width:100%;max-width:700px;padding:62px 34px 86px}
   .hero-lux-content h1{font-size:clamp(3rem,8vw,4.8rem);max-width:12em}
   .hero-logo{width:122px!important;height:122px!important}
-
   .two,.reviews,.mapgrid,.contactgrid,.split{grid-template-columns:1fr}
   .two{gap:34px}
   .photo.tall{height:min(520px,65svh)}
@@ -115,15 +113,12 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .contactgrid{gap:34px}
   .form{padding:28px}
   .mapgrid iframe{height:380px}
-
   .service-intro-grid{grid-template-columns:1fr}
   .disease-browser{grid-template-columns:1fr}
   .disease-list{max-height:390px}
   .detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-
   .gallery-lux{grid-template-columns:repeat(2,minmax(0,1fr))}
   .gallery-shot{height:320px}
-
   .foot{grid-template-columns:1fr 1fr;gap:34px}
   .foot>div:first-child{grid-column:1/-1}
 }
@@ -135,37 +130,30 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .pagehero h1,.page-hero h1{font-size:clamp(2.5rem,10vw,4rem)}
   .eyebrow{font-size:.68rem;letter-spacing:.14em;gap:8px}
   .eyebrow:before{width:22px}
-
   .luxury-hero{min-height:660px}
   .hero-lux-content{padding:52px 26px 82px}
   .hero-lux-content h1{font-size:clamp(2.75rem,10vw,4.25rem);line-height:1.01}
   .hero-lux-content p{font-size:1rem;line-height:1.7;margin:20px 0 26px}
   .hero-logo{width:112px!important;height:112px!important;margin-bottom:18px}
   .hero-dots{bottom:18px}
-
   .cards,.contentgrid{grid-template-columns:1fr}
   .card,.feature{padding:26px}
   .mini-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
   .mini-grid strong{font-size:1.45rem}
   .split-copy{padding:56px 28px}
-
   .dosha-browser{padding:18px;border-radius:22px}
   .dosha-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
   .dosha-tab{padding:11px 10px;font-size:.9rem;white-space:normal}
   .disease-list-panel,.disease-detail{padding:18px;border-radius:20px}
   .detail-grid{grid-template-columns:1fr}
-
   .gallery-lux{gap:14px}
   .gallery-shot{height:280px;border-radius:20px}
-
   .sri-lanka-map{height:460px;border-radius:22px}
   .branch-cards{grid-template-columns:1fr 1fr;gap:14px}
   .branch-card{padding:24px}
   .branch-card .btn{width:100%;padding-inline:16px;text-align:center}
-
   .cta{padding:34px 28px;flex-direction:column;align-items:flex-start}
   .cta .btn{max-width:100%}
-
   .foot{grid-template-columns:1fr 1fr;gap:30px}
   footer{padding-top:52px}
 }
@@ -176,11 +164,9 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   h1{font-size:clamp(2.35rem,11vw,3.3rem)}
   h2{font-size:clamp(2rem,9vw,2.75rem)}
   h3{font-size:1.45rem}
-
   .nav{height:66px}
   .brand img{width:50px!important;height:50px!important}
   .links{top:66px;max-height:calc(100svh - 66px)}
-
   .luxury-hero{min-height:640px;align-items:center}
   .hero-slide{background-position:62% center}
   .hero-lux-content{padding:46px 22px 76px;text-align:left}
@@ -188,17 +174,14 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .hero-logo{width:98px!important;height:98px!important}
   .actions{gap:10px;width:100%}
   .actions .btn{min-height:48px;padding-inline:18px}
-
   .photo.tall{height:390px;border-radius:22px}
   .split-photo{min-height:320px}
   .split-copy{padding:48px 22px}
   .mini-grid{grid-template-columns:1fr;gap:14px}
   .mini-grid div{padding-top:12px}
-
   .card,.feature,.form{padding:22px}
   .form input,.form textarea{font-size:16px}
   .contactitem{padding:17px}
-
   .dosha-browser{padding:14px}
   .dosha-nav{grid-template-columns:1fr}
   .dosha-tab{width:100%;min-height:48px}
@@ -206,19 +189,15 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .disease-item{padding:12px;gap:10px}
   .disease-number{min-width:40px;width:40px;height:40px}
   .disease-detail{min-height:0}
-
   .gallery-lux{grid-template-columns:1fr}
   .gallery-shot{height:310px}
-
   .sri-lanka-map{height:410px}
   .branch-cards{grid-template-columns:1fr}
   .branch-card{padding:22px}
-
   .foot{grid-template-columns:1fr;gap:28px}
   .foot>div:first-child{grid-column:auto}
   .foot img{width:100px!important;height:100px!important}
   .copy{margin-top:28px}
-
   .wa{width:52px;height:52px;font-size:1.25rem}
 }
 
@@ -226,7 +205,6 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .wrap{width:calc(100% - 20px)}
   .section{padding:52px 0}
   .pagehero,.page-hero{padding:58px 0 42px}
-
   .luxury-hero{min-height:620px}
   .hero-lux-content{padding:38px 18px 72px}
   .hero-lux-content h1{font-size:clamp(2.3rem,12.5vw,3.1rem)}
@@ -234,12 +212,10 @@ h3{font-size:clamp(1.35rem,2vw,1.8rem)}
   .hero-logo{width:88px!important;height:88px!important}
   .actions{flex-direction:column;align-items:stretch}
   .actions .btn{width:100%}
-
   .photo.tall{height:330px}
   .split-photo{min-height:280px}
   .gallery-shot{height:270px}
   .sri-lanka-map{height:360px}
-
   .cta{padding:28px 20px;border-radius:22px}
   .cta .btn{width:100%}
   .branch-card h3{font-size:1.65rem}
