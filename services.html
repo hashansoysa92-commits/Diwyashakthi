@@ -8,129 +8,31 @@
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://hashansoysa92-commits.github.io/Diwyashakthi/services.html">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="luxury.css">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
-  <div class="topbar">
-    <div class="wrap topbar-in">
-      <span>Eppawala, Sri Lanka</span>
-      <span>
-        <a href="tel:+94719645225">071 9645225</a> ·
-        <a href="tel:+94701424834">070 1424834</a>
-      </span>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="wrap nav">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.svg" alt="Diwyashakthi Wedamedura">
-      </a>
-
-      <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
-
-      <nav class="links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn small" href="https://wa.me/94701424160" target="_blank" rel="noopener">WhatsApp</a>
-      </nav>
-    </div>
-  </header>
-
+  <div class="topbar"><div class="wrap topbar-in"><span>Eppawala, Sri Lanka</span><span><a href="tel:+94701424160">070 142 4160</a> · <a href="tel:+94701424834">070 142 4834</a></span></div></div>
+  <header class="header"><div class="wrap nav"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="Diwyashakthi Wedamedura"></a><button class="menu" aria-label="Open menu" aria-expanded="false">☰</button><nav class="links"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="btn small" href="https://wa.me/94701424160" target="_blank" rel="noopener">WhatsApp</a></nav></div></header>
   <main>
-    <section class="page-hero">
-      <div class="wrap">
-        <span class="eyebrow">Services</span>
-        <h1>වාත, පිත, කප රෝග සහ විස්තර</h1>
-        <p class="lead">
-          ඔබ ලබාදුන් රෝග ලැයිස්තුව අනුව, රෝග වර්ග 3ක් ලෙස වෙන්කර මෙම පිටුව සකස් කර ඇත.
-          ඕනෑම රෝගයක් click කළ විට එයට අදාල තාවකාලික editable විස්තරය පහළින් පෙන්වයි.
-        </p>
+    <section class="page-hero"><div class="wrap reveal"><span class="eyebrow">Services</span><h1>වාත, පිත, කප රෝග සහ විස්තර</h1><p class="lead">ඔබ ලබාදුන් රෝග ලැයිස්තුව අනුව රෝග වර්ග තුනක් ලෙස වෙන් කර ඇත. ඕනෑම රෝගයක් click කළ විට එයට අදාල විස්තරය පෙන්වයි.</p></div></section>
+    <section class="section services-shell reveal"><div class="wrap">
+      <div class="service-intro-grid">
+        <article class="service-mini"><span class="mini-badge">වාත</span><h3>වාත රෝග</h3><p>ස්නායු, සන්ධි, වේදනා සහ වාත ප්‍රධාන තත්ත්ව.</p></article>
+        <article class="service-mini"><span class="mini-badge">පිත</span><h3>පිත රෝග</h3><p>උෂ්ණත්වය, දාහය, ආහාර ජීර්ණය, සම සහ අනෙකුත් පිත ගණයට අයත් තත්ත්ව.</p></article>
+        <article class="service-mini"><span class="mini-badge">කප</span><h3>කප (සෙම) රෝග</h3><p>සෙම, හුස්ම ගැනීම, බර බව, නිදිමත සහ ඒ ආශ්‍රිත තත්ත්ව.</p></article>
       </div>
-    </section>
-
-    <section class="section services-shell">
-      <div class="wrap">
-        <div class="service-intro-grid">
-          <article class="service-mini">
-            <span class="mini-badge">වාත</span>
-            <h3>චලනය, වේදනාව, හිරිවැටීම</h3>
-            <p>ස්නායු, සන්ධි, වේදනා සහ වාත ප්‍රධාන රෝග වර්ග.</p>
-          </article>
-
-          <article class="service-mini">
-            <span class="mini-badge">පිත</span>
-            <h3>උෂ්ණත්වය, දැවිල්ල, ආහාරමය ගැටලු</h3>
-            <p>අමිලතාව, දාහය, තයිරොයිඩ්, කුෂ්ඨ සහ අනෙකුත් පිත ගණයට අයත් රෝග.</p>
-          </article>
-
-          <article class="service-mini">
-            <span class="mini-badge">කප</span>
-            <h3>සෙම, බර බව, නිදිමත</h3>
-            <p>ඇදුම, හතිය, සයිනසයිටීස්, සෙම සහ කප ගුණාංග සම්බන්ධ තත්ත්ව.</p>
-          </article>
+      <div class="dosha-browser">
+        <div id="doshaNav" class="dosha-nav"></div>
+        <div class="disease-browser">
+          <aside class="disease-list-panel"><h2 id="activeCategoryTitle">වාත රෝග</h2><p class="muted">රෝගය click කර විස්තර බලන්න.</p><div id="diseaseList" class="disease-list"></div></aside>
+          <article id="diseaseDetail" class="disease-detail"><span class="detail-chip">රෝග විස්තර</span><h3>රෝගයක් තෝරන්න</h3><p>වම් පැත්තේ ලැයිස්තුවෙන් රෝගයක් click කළ විට ඒ රෝගයට අදාල විස්තර මෙහි පෙන්වයි.</p></article>
         </div>
-
-        <div class="dosha-browser">
-          <div id="doshaNav" class="dosha-nav"></div>
-
-          <div class="disease-browser">
-            <aside class="disease-list-panel">
-              <h2 id="activeCategoryTitle">වාත රෝග</h2>
-              <p class="muted">රෝගය click කර විස්තර බලන්න.</p>
-              <div id="diseaseList" class="disease-list"></div>
-            </aside>
-
-            <article id="diseaseDetail" class="disease-detail">
-              <span class="detail-chip">රෝග විස්තර</span>
-              <h3>රෝගයක් තෝරන්න</h3>
-              <p>
-                වම් පැත්තේ ලැයිස්තුවෙන් රෝගයක් click කළ විට,
-                ඒ රෝගයට අදාල විස්තර මෙහි පෙන්වයි.
-              </p>
-            </article>
-          </div>
-
-          <p class="edit-hint">
-            ඉදිරියේදී රෝග විස්තර වෙන වෙනම update කිරීමට අවශ්‍ය නම්
-            <strong>script.js</strong> තුළ ඇති <strong>diseaseCatalog</strong> data object එක edit කරන්න.
-          </p>
-        </div>
+        <p class="edit-hint">ඉදිරියේදී එක් එක් රෝගයට විශේෂ විස්තර, ලක්ෂණ, හේතු සහ ආයුර්වේද ප්‍රවේශය වෙන වෙනම update කළ හැකි ලෙස data structure එක සකස් කර ඇත.</p>
       </div>
-    </section>
+    </div></section>
   </main>
-
-  <footer>
-    <div class="wrap foot">
-      <div>
-        <img src="assets/logo.svg" alt="Diwyashakthi Wedamedura">
-        <p>Traditional Ayurveda and wellness in Eppawala, Sri Lanka.</p>
-      </div>
-
-      <div>
-        <h4>Explore</h4>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div>
-        <h4>Connect</h4>
-        <a href="https://www.facebook.com/diwyashakthi.page/" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.instagram.com/diwyashakthiwedamedura/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@diwyashakthiwedamedura" target="_blank" rel="noopener">TikTok</a>
-      </div>
-    </div>
-
-    <div class="wrap copy">© <span id="year"></span> Diwyashakthi Wedamedura. All rights reserved.</div>
-  </footer>
-
+  <footer><div class="wrap foot"><div><img src="assets/logo.svg" alt="Diwyashakthi Wedamedura"><p>Traditional Ayurveda and wellness in Eppawala, Sri Lanka.</p></div><div><h4>Explore</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div><div><h4>Connect</h4><a href="https://www.facebook.com/diwyashakthi.page/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/diwyashakthiwedamedura/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@diwyashakthiwedamedura" target="_blank" rel="noopener">TikTok</a></div></div><div class="wrap copy">© <span id="year"></span> Diwyashakthi Wedamedura.</div></footer>
   <a class="wa" aria-label="Chat on WhatsApp" href="https://wa.me/94701424160" target="_blank" rel="noopener">✆</a>
-
   <script src="script.js"></script>
-</body>
-</html>
+</body></html>
