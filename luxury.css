@@ -46,7 +46,7 @@ footer{background:radial-gradient(circle at 15% 0%,rgba(226,171,60,.12),transpar
 .hero-slide:nth-child(2){background-image:url('https://images.unsplash.com/photo-1768729340689-9d4b7c7141a9?auto=format&fit=crop&fm=jpg&q=82&w=2400')}
 .hero-slide:nth-child(3){background-image:url('https://images.unsplash.com/photo-1768729340804-dd94f6dd612e?auto=format&fit=crop&fm=jpg&q=82&w=2400')}
 .hero-shade{z-index:1;background:linear-gradient(90deg,rgba(0,43,19,.96) 0%,rgba(0,63,27,.90) 35%,rgba(0,63,27,.62) 55%,rgba(0,43,19,.2) 76%,rgba(0,0,0,.14) 100%)}
-.hero-lux-content{position:relative;z-index:3;padding:82px 0 95px;color:#fff;max-width:760px;margin-left:0}
+.hero-lux-content{position:relative;z-index:3;padding:82px 34px 95px 46px;color:#fff;max-width:760px;margin-left:0}
 .hero-logo{width:150px!important;height:150px;object-fit:contain;margin-bottom:24px;filter:drop-shadow(0 12px 24px rgba(0,0,0,.25));animation:logoFloat 5s ease-in-out infinite}
 @keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .hero-lux-content .eyebrow{color:var(--gold-soft)}
@@ -96,7 +96,7 @@ footer{background:radial-gradient(circle at 15% 0%,rgba(226,171,60,.12),transpar
   .links{top:70px}
   .luxury-hero{min-height:680px}
   .hero-shade{background:linear-gradient(90deg,rgba(0,43,19,.95),rgba(0,63,27,.78) 63%,rgba(0,43,19,.38))}
-  .hero-lux-content{padding:70px 0 90px;max-width:660px}
+  .hero-lux-content{padding:70px 30px 90px 34px;max-width:660px}
   .hero-logo{width:125px!important;height:125px}
   .hero-arrow{display:none}
 }
@@ -104,7 +104,7 @@ footer{background:radial-gradient(circle at 15% 0%,rgba(226,171,60,.12),transpar
   .luxury-hero{min-height:700px}
   .hero-slide{background-position:62% center}
   .hero-shade{background:linear-gradient(180deg,rgba(0,43,19,.83),rgba(0,43,19,.90))}
-  .hero-lux-content{text-align:left;padding:56px 0 90px}
+  .hero-lux-content{text-align:left;padding:56px 22px 90px 24px}
   .hero-logo{width:108px!important;height:108px;margin-bottom:18px}
   .hero-lux-content h1{font-size:3rem}
   .gallery-lux{grid-template-columns:1fr}
