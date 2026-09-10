@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Diwyashakthi Wedamedura</title>
+  <desc id="desc">Elegant botanical logo mark and wordmark.</desc>
+  <g fill="none" stroke="#b59655" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 90c0-32 9-53 29-69"/>
+    <path d="M57 69c-15-5-25-17-28-34 17 2 29 13 31 29"/>
+    <path d="M66 49c2-17 13-29 31-34-1 18-12 31-29 37"/>
+    <path d="M52 84c-14-2-25-10-32-22 15-1 27 6 34 18"/>
+  </g>
+  <circle cx="55" cy="60" r="44" fill="none" stroke="#1d4c3f" stroke-width="1.5" opacity=".55"/>
+  <text x="122" y="57" fill="#1d4c3f" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="1.4">DIWYASHAKTHI</text>
+  <text x="124" y="84" fill="#806b3f" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="4.8">WEDAMEDURA</text>
+</svg>
