@@ -1,0 +1,148 @@
+/* =========================================================
+   Diwyashakthi — luxury first-load hero intro
+   Logo pops in first, lands in final hero position, then text reveals
+   ========================================================= */
+
+html.intro-sequence,
+html.intro-sequence body{
+  overflow:hidden;
+}
+
+html.intro-sequence .hero-logo{
+  opacity:0;
+}
+
+html.intro-sequence .hero-lux-content .eyebrow,
+html.intro-sequence .hero-lux-content h1,
+html.intro-sequence .hero-lux-content > p,
+html.intro-sequence .hero-lux-content .actions,
+html.intro-sequence .hero-arrow,
+html.intro-sequence .hero-dots{
+  opacity:0;
+  transform:translateY(24px) scale(.985);
+}
+
+.site-intro{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  pointer-events:none;
+}
+
+.site-intro-backdrop{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 50% 48%,rgba(16,112,58,.34),transparent 34%),
+    radial-gradient(circle at 50% 50%,rgba(226,171,60,.08),transparent 24%),
+    linear-gradient(145deg,#002810 0%,#00431d 54%,#001d0c 100%);
+  opacity:1;
+  will-change:opacity;
+}
+
+.site-intro-backdrop:before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(120deg,transparent 0 44%,rgba(255,255,255,.025) 50%,transparent 56% 100%);
+  background-size:220% 100%;
+  animation:introSheen 2.2s ease-in-out infinite;
+}
+
+@keyframes introSheen{
+  0%{background-position:130% 0}
+  100%{background-position:-60% 0}
+}
+
+.site-intro-logo{
+  position:fixed;
+  left:50%;
+  top:50%;
+  width:clamp(160px,16vw,220px);
+  height:auto;
+  transform:translate(-50%,-50%) scale(.62);
+  opacity:0;
+  filter:drop-shadow(0 18px 42px rgba(0,0,0,.38));
+  will-change:left,top,width,transform,opacity;
+}
+
+html.intro-sequence.intro-revealing .hero-logo{
+  opacity:1;
+}
+
+html.intro-sequence.intro-revealing .hero-lux-content .eyebrow{
+  animation:introTextRise .68s cubic-bezier(.2,.8,.2,1) .08s forwards;
+}
+
+html.intro-sequence.intro-revealing .hero-lux-content h1{
+  animation:introHeadlinePop .88s cubic-bezier(.18,.9,.22,1) .20s forwards;
+}
+
+html.intro-sequence.intro-revealing .hero-lux-content > p{
+  animation:introTextRise .72s cubic-bezier(.2,.8,.2,1) .42s forwards;
+}
+
+html.intro-sequence.intro-revealing .hero-lux-content .actions{
+  animation:introTextRise .72s cubic-bezier(.2,.8,.2,1) .62s forwards;
+}
+
+html.intro-sequence.intro-revealing .hero-arrow,
+html.intro-sequence.intro-revealing .hero-dots{
+  animation:introControls .55s ease .84s forwards;
+}
+
+@keyframes introTextRise{
+  0%{opacity:0;transform:translateY(24px) scale(.985);filter:blur(7px)}
+  100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+}
+
+@keyframes introHeadlinePop{
+  0%{opacity:0;transform:translateY(30px) scale(.955);filter:blur(10px)}
+  62%{opacity:1;transform:translateY(-2px) scale(1.012);filter:blur(0)}
+  100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+}
+
+@keyframes introControls{
+  0%{opacity:0;transform:scale(.88)}
+  100%{opacity:1;transform:scale(1)}
+}
+
+html.intro-complete .hero-logo,
+html.intro-fallback .hero-logo,
+html.intro-complete .hero-lux-content .eyebrow,
+html.intro-complete .hero-lux-content h1,
+html.intro-complete .hero-lux-content > p,
+html.intro-complete .hero-lux-content .actions,
+html.intro-complete .hero-arrow,
+html.intro-complete .hero-dots,
+html.intro-fallback .hero-lux-content .eyebrow,
+html.intro-fallback .hero-lux-content h1,
+html.intro-fallback .hero-lux-content > p,
+html.intro-fallback .hero-lux-content .actions,
+html.intro-fallback .hero-arrow,
+html.intro-fallback .hero-dots{
+  opacity:1;
+  transform:none;
+  filter:none;
+}
+
+@media (max-width:600px){
+  .site-intro-logo{width:clamp(130px,38vw,176px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .site-intro{display:none!important}
+  html.intro-sequence .hero-logo,
+  html.intro-sequence .hero-lux-content .eyebrow,
+  html.intro-sequence .hero-lux-content h1,
+  html.intro-sequence .hero-lux-content > p,
+  html.intro-sequence .hero-lux-content .actions,
+  html.intro-sequence .hero-arrow,
+  html.intro-sequence .hero-dots{
+    opacity:1!important;
+    transform:none!important;
+    filter:none!important;
+    animation:none!important;
+  }
+}
