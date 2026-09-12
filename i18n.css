@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+
+.language-switcher{display:inline-flex;align-items:center;gap:4px;padding:4px;border:1px solid rgba(226,171,60,.35);border-radius:999px;background:rgba(255,250,240,.82);box-shadow:0 8px 22px rgba(0,43,19,.06);backdrop-filter:blur(10px);white-space:nowrap}
+.language-switcher button{appearance:none;border:0;background:transparent;color:#3d5245;padding:8px 11px;border-radius:999px;font:700 .72rem/1.1 'Noto Sans Sinhala','Noto Sans Tamil',Arial,sans-serif;cursor:pointer;transition:background .25s ease,color .25s ease,transform .25s ease;min-height:34px}
+.language-switcher button:hover{background:rgba(0,92,39,.07);transform:translateY(-1px)}
+.language-switcher button.is-active{background:linear-gradient(135deg,#00652c,#003f1b);color:#fff;box-shadow:0 7px 18px rgba(0,92,39,.18)}
+html[lang='si'] body{font-family:'Noto Sans Sinhala',Manrope,Arial,sans-serif}
+html[lang='ta'] body{font-family:'Noto Sans Tamil',Manrope,Arial,sans-serif}
+html[lang='si'] h1,html[lang='si'] h2,html[lang='si'] h3,html[lang='ta'] h1,html[lang='ta'] h2,html[lang='ta'] h3{font-family:'Noto Sans Sinhala','Noto Sans Tamil',Georgia,serif;letter-spacing:-.025em;line-height:1.22}
+html[lang='si'] .hero-lux-content h1,html[lang='ta'] .hero-lux-content h1{line-height:1.18!important;max-width:940px!important;font-size:clamp(2.9rem,4.5vw,4.75rem)!important}
+html[lang='si'] .eyebrow,html[lang='ta'] .eyebrow{text-transform:none;letter-spacing:.08em}
+
+@media(max-width:1050px){
+  .language-switcher button{padding:7px 9px;font-size:.68rem}
+}
+@media(max-width:900px){
+  .links .language-switcher{width:100%;display:grid;grid-template-columns:repeat(3,1fr);margin:4px 0 8px;padding:5px}
+  .links .language-switcher button{width:100%;min-height:42px}
+}
+@media(max-width:600px){
+  html[lang='si'] .hero-lux-content h1,html[lang='ta'] .hero-lux-content h1{font-size:clamp(2.2rem,9.7vw,3.15rem)!important;line-height:1.24!important}
+  .language-switcher button{font-size:.66rem}
+}
