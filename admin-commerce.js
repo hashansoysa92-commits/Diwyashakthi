@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const ready=()=>typeof sb!=='undefined'&&typeof $==='function';
-async function waitInit(){for(let i=0;i<50&&!ready();i++)await new Promise(r=>setTimeout(r,100));if(!ready())return;bindCommerce();await loadProductsAdmin();await loadOrdersAdmin()}
+const ready=()=>typeof sb!=='undefined'&&typeof $==='function'&&typeof session!=='undefined'&&session?.user;
+async function waitInit(){for(let i=0;i<80&&!ready();i++)await new Promise(r=>setTimeout(r,100));if(!ready())return;bindCommerce();await loadProductsAdmin();await loadOrdersAdmin()}
 function bindCommerce(){
  $('newProductBtn')?.addEventListener('click',()=>openProductEditor());
  $('cancelProductBtn')?.addEventListener('click',closeProductEditor);
